@@ -24,12 +24,8 @@ body {
     color: #212121;
 }
 .section {
-    padding-bottom: 200px;
-    padding-top: 200px;
-}
-.section.no-padding {
-    padding-bottom: 0px;
-    padding-top: 0px;
+    padding-bottom: 94px;
+    padding-top: 94px;
 }
 .container {
     width: 1200px;
@@ -55,6 +51,13 @@ body {
     color: var(--primary-text-color);
 }
 /* ---------header--------- */
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header-nav {
+    display: flex;
+}
 .logo {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -64,6 +67,10 @@ body {
 }
 .web {
     color: var(--accent-color);
+}
+.nav-list {
+    display: flex;
+    align-items: center;
 }
 .nav-link {
     font-weight: 500;
@@ -75,12 +82,18 @@ body {
 .nav-link:hover, .nav-link:focus {
     color: var(--accent-color);
 }
+.nav-contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 .nav-contact {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--second-text-color);
+    
 }
 .nav-contact:hover, .nav-contact:focus {
     color: var(--accent-color);
@@ -90,6 +103,10 @@ body {
     background-color: #2F303A;
     text-align: center;
     margin-bottom: 94px;
+}
+.hero-section {
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .hero-tittle {
     font-weight: 900;
@@ -127,8 +144,10 @@ body {
 .heading-title {
     display: none;
 }
+
 .heading-list {
     margin-bottom: 94px;
+    display: flex;
 }
 .heading-item {
     max-width: 270px;
@@ -160,12 +179,20 @@ body {
 }
 .galary-list {
     margin-bottom: 94px;
+    display: flex;
+}
+.section.no-padding {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 /* ---------team--------- */
 .team-section {
     padding-top: 94px;
     padding-bottom: 94px;
     background-color: #F5F4FA;
+}
+.team-list {
+    display: flex;
 }
 .team-title {
     font-weight: 700;
@@ -219,6 +246,10 @@ body {
 }
 /* ---------portfolio--------- */
 /* ---------buttons--------- */
+.list-button {
+    display: flex;
+    justify-content: center;
+}
 .project-button {
     font-family: inherit;
     font-weight: 500;
@@ -238,12 +269,21 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* ---------projects-galary--------- */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
 .project-box {
     width: 370px;
     height: 404px;
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+    margin-left: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
 }
 .project-box-title {
     font-weight: 700;
