@@ -1,3 +1,13 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
 /* Осн. цвет #2196F3 (голубой) */
 /* цвет футера #2F303A */
 :root {
@@ -12,6 +22,21 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #212121;
+}
+.section {
+    padding-bottom: 200px;
+    padding-top: 200px;
+}
+.section.no-padding {
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .list {
     list-style: none;
@@ -63,6 +88,8 @@ body {
 /* ---------hero--------- */
 .hero {
     background-color: #2F303A;
+    text-align: center;
+    margin-bottom: 94px;
 }
 .hero-tittle {
     font-weight: 900;
@@ -72,6 +99,8 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
+    
 }
 .btn {
     font-family: inherit;
@@ -79,20 +108,30 @@ body {
     font-size: 16px;
     line-height: 1.87;
     align-items: center;
-    text-align: center;
+    
     letter-spacing: 0.06em;
     color: #FFFFFF;
     background-color: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
     cursor: pointer;
 }
 .btn:hover, .btn.focus {
     color: #188CE8;
 }
+.hero-button {
+    padding: 10px 32px;
+}
 /* ---------heading--------- */
 .heading-title {
-    display:none;
+    display: none;
+}
+.heading-list {
+    margin-bottom: 94px;
+}
+.heading-item {
+    max-width: 270px;
 }
 .second-heading-title {
     font-weight: 700;
@@ -101,6 +140,7 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-text-color);
+    margin-bottom: 10px;
 }
 .heading-text {
     font-size: 14px;
@@ -116,8 +156,17 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+.galary-list {
+    margin-bottom: 94px;
 }
 /* ---------team--------- */
+.team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+    background-color: #F5F4FA;
+}
 .team-title {
     font-weight: 700;
     font-size: 36px;
@@ -125,6 +174,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
+    margin-bottom: 50px;
 }
 .team-item {
     width: 270px;
@@ -151,6 +201,8 @@ body {
 /* ---------footer--------- */
 .footer {
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-link-maps {
@@ -175,6 +227,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     border-radius: 4px;
+    border: none;
     color: var(--primary-text-color);
     background-color: #F5F4FA;
     cursor: pointer;
