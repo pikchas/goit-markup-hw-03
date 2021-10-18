@@ -229,7 +229,7 @@ body {
 }
 .team-list {
     display: flex;
-
+    justify-content: space-between;
 }
 
 .team-title {
@@ -239,7 +239,7 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--primary-text-color);
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .team-item {
     width: 270px;
@@ -247,13 +247,10 @@ body {
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 120px) / 4);
+    
 }
 .team-item:first-child {
-    margin-left: -30px;
-
+    
 }
 .foto-box {
     margin-bottom: 30px;
@@ -305,7 +302,7 @@ body {
 .list-button {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 .project-button {
     font-family: inherit;
@@ -333,7 +330,7 @@ body {
 .projects-list {
     display: flex;
     flex-wrap: wrap;
-   
+    
 }
 
 .project-box {
@@ -342,15 +339,20 @@ body {
     background: #FFFFFF;
     border-bottom: 1px solid #EEEEEE;
     box-sizing: border-box;
-    margin-left: 30px;
-    margin-top: 30px;
-    flex-basis: calc((100% - 90px) / 3);
+    
 }
-.project-box:nth-child(3n + 1) {
-    margin-left: -30px;
+.project-box:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+}
+.project-box:not(:nth-child(n+7)) {
+    margin-bottom: 30px;
 }
 .project-box-foto {
-    margin-bottom: 20px;
+    
+}
+.about-project-box {
+    padding-top: 20px;
+    padding-left: 24px;
 }
 .project-box-title {
     font-weight: 700;
@@ -359,12 +361,12 @@ body {
     letter-spacing: 0.06em;
     color: var(--primary-text-color);
     margin-bottom: 4px;
-    margin-left: 24px;
+    
 }
 .project-about {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
-    margin-left: 24px;
+    
 }
